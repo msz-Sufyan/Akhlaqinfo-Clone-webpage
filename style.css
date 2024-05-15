@@ -965,6 +965,8 @@ width: 600px;
     font-size: 45px;
 }
 
+
+
 /* Media query for screens with a minimum width of 320px */
 @media screen and (min-width: 320px) {
     /* Adjustments for the navigation */
@@ -1257,7 +1259,6 @@ width: 600px;
     }
     #page3left{
         width: 100%;
-        border: 2px soid aqua;
         margin-bottom: 30px;
     }
     #page3right{
@@ -1378,8 +1379,7 @@ width: 600px;
         }
         #page3left{
             width: 100%;
-            border: 2px soid aqua;
-            margin-bottom: 30px;
+       margin-bottom: 30px;
         }
         #page3right{
             width: 100%;
