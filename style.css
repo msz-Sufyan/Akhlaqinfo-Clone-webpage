@@ -964,3 +964,492 @@ width: 600px;
     color: #fff;
     font-size: 45px;
 }
+
+/* Media query for screens with a minimum width of 320px */
+@media screen and (min-width: 320px) {
+    /* Adjustments for the navigation */
+    #main{
+        width: 100%;
+    }
+    #lower-nav{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        border: 2px solid red;
+        flex-shrink: 1;
+        overflow: hidden;
+    }
+    #lower-nav #nav-button button {
+        font-size: 10px;
+        text-align: left;
+        margin: auto;
+    }
+
+    #lower-nav #links-container a {
+        justify-content: space-evenly;
+        font-size: 10px;
+        padding: 0px 18px;
+    }
+
+    /* Adjustments for the banner */
+    .banner h3 {
+        font-size: 24px;
+    }
+
+    .banner a {
+        font-size: 12px;
+    }
+
+    /* Adjustments for the content */
+    .content-left #container h4 {
+        font-size: 16px;
+    }
+
+    .content-left h3 {
+        font-size: 3em;
+    }
+
+    .content-left a {
+        height: 40px;
+        width: 140px;
+        font-size: 10px;
+    }
+    #page1 .box-containner{
+        width: 100%;
+    }
+    /* Adjustments for the page 2 */
+    .page2-upperleft h4 {
+        font-size: 16px;
+    }
+
+    .page2-upperleft a {
+        font-size: 35px;
+    }
+
+    .page2-upperright h3 {
+        font-size: 12px;
+    }
+
+    .card {
+        width: 45%;
+        height: 180px;
+        padding: 20px;
+    }
+
+    .card i {
+        font-size: 40px;
+    }
+
+    .card h3 {
+        font-size: 14px;
+    }
+
+    .link2 i {
+        font-size: 24px;
+    }
+
+    .card, .link2, a {
+        font-size: 12px;
+    }
+
+    /* Adjustments for the page 3 */
+    #page3 {
+        height: auto;
+    }
+
+    #page3left {
+        width: 100%;
+    }
+
+    #page3right {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #slider-container h4 {
+        font-size: 12px;
+    }
+
+    #slider-container h2 {
+        font-size: 25px;
+    }
+
+    /* Adjustments for the page 4 */
+    #page4 {
+        height: auto;
+    }
+
+    #page4-content video {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Adjustments for the page 5 */
+    #page5 {
+        height: auto;
+    }
+
+    .page5-upper h3 {
+        font-size: 12px;
+    }
+
+    .page5-upper h2 {
+        font-size: 30px;
+    }
+
+    .page5-card {
+        width: 90%;
+        height: auto;
+    }
+
+    .page5-card .page5-card-left i {
+        font-size: 30px;
+    }
+
+    .page5-card .page5-card-right h3 {
+        font-size: 12px;
+    }
+
+    .page5-card .page5-card-right h2 {
+        font-size: 16px;
+    }
+
+    .page5-card .page5-card-right a {
+        font-size: 14px;
+    }
+
+    /* Adjustments for the footer */
+    #footer {
+        height: auto;
+    }
+
+    .footer-upper h2 {
+        font-size: 25px;
+    }
+
+    .footer-upper-link {
+        width: 100px;
+        height: 40px;
+        margin: 10px;
+    }
+
+    .footer-upper-link a {
+        font-size: 10px;
+    }
+    .footer-center-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;;
+    }
+    .footer-center-text {
+        font-size: 20px;
+    }
+
+    .footer-card {
+        width: 90%;
+    }
+    .footer-bottom-container .footer-card .footer-card1 h2{
+        font-size: 10px;
+    }
+    .footer-card #dash {
+        margin: 10px auto;
+    }
+
+    .footer-card1 h3{
+        font-size: 12px;
+    }
+
+
+    .footer-card4 h3 {
+        font-size: 12px;
+    }
+
+    .footer-card h2 {
+        font-size: 20px;
+    }
+
+    .footer-badge h4 {
+        font-size: 12px;
+    }
+
+    .footer-badge i {
+        font-size: 30px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media query for small screens */
+@media screen and (max-width: 767px) {
+    /* Hide regular navigation links */
+#main{
+    height: auto;
+}
+    #nav{
+        height:fit-content;
+    }
+    #upper-nav > *{
+        display: none;
+    }
+
+    /* Adjust layout for lower navigation */
+    #lower-nav {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    #page1 .banner{
+        height: auto;
+    }
+    #page1 #content{
+        display: flex;
+        flex-direction: column;
+    }
+    #page1 .content-right{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        }
+    #page1 .content-right .box-containner{
+        margin-bottom: 40px;
+    }
+    #page1 .orbit > *{
+        height: 100%;
+        width: 400px;
+    }
+    #page2{
+        height: auto;
+    }
+    .page2-lowerdiv #card-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; /* Optional: Adjust as per your design */
+      }
+
+    .page2-lowerdiv .card {
+        width: 45%; /* Adjust the width as per your design */
+        margin-bottom: 20px; /* Optional: Adjust the margin as per your design */
+        border: 1px solid #ccc; /* Optional: Add styling to the card */
+        padding: 10px; /* Optional: Add padding to the card */
+      }
+
+    #page3{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #page3left{
+        width: 100%;
+        border: 2px soid aqua;
+        margin-bottom: 30px;
+    }
+    #page3right{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 50px;
+    }
+    #slider-container{
+        text-align: center;
+    }
+    #page4{
+        height: auto;
+    }
+    #page4 #myVideo{
+        width: 80%;
+        height: auto;
+    }
+    #page5{
+        height: auto;
+    }
+
+
+    .page5-card-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .page5-card{
+        width: 90%; /* Adjust the width as per your design */
+        margin-bottom: 20px; /* Optional: Adjust the margin as per your design */
+        border: 1px solid #ccc; /* Optional: Add styling to the card */
+        padding: 10px;
+    }
+    #footer{
+        height: auto;
+    }
+    
+    .footer-bottom-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        text-align: center;
+    }
+    .footer-card{
+        width: 45%; /* Adjust the width as per your design */
+        margin-bottom: 20px; /* Optional: Adjust the margin as per your design */
+        padding: 10px;
+        text-align: center;
+
+    }
+    .footer-card #dash {
+        margin: 10px auto; /* Center the dash horizontally */
+    }
+}
+
+
+/* Media query for medium screens */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    #main{
+        height: auto;
+    }
+        #nav{
+            height:fit-content;
+        }
+        #upper-nav > *{
+            display: none;
+        }
+    
+        /* Adjust layout for lower navigation */
+        #lower-nav {
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        #page1 .banner{
+            height: auto;
+        }
+        #page1 #content{
+            display: flex;
+            flex-direction: column;
+        }
+        #page1 .content-right{
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            }
+        #page1 .content-right .box-containner{
+            margin-bottom: 40px;
+        }
+        #page1 .orbit > *{
+            height: 100%;
+            width: 400px;
+        }
+        #page2{
+            height: auto;
+        }
+        .page2-lowerdiv #card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between; /* Optional: Adjust as per your design */
+          }
+    
+        .page2-lowerdiv .card {
+            width: 45%; /* Adjust the width as per your design */
+            margin-bottom: 20px; /* Optional: Adjust the margin as per your design */
+            border: 1px solid #ccc; /* Optional: Add styling to the card */
+            padding: 10px; /* Optional: Add padding to the card */
+          }
+    
+        #page3{
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #page3left{
+            width: 100%;
+            border: 2px soid aqua;
+            margin-bottom: 30px;
+        }
+        #page3right{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 50px;
+        }
+        #slider-container{
+            text-align: center;
+        }
+        #page4{
+            height: auto;
+        }
+        #page4 #myVideo{
+            width: 80%;
+            height: auto;
+        }
+        #page5{
+            height: auto;
+        }
+    
+    
+        .page5-card-container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .page5-card{
+            width: 45%; /* Adjust the width as per your design */
+            margin: 20px; /* Optional: Adjust the margin as per your design */
+            border: 1px solid #ccc; /* Optional: Add styling to the card */
+            padding: 10px;
+
+        }
+        #footer{
+            padding-top: 40px;
+            margin-top: 40px;
+            height: auto;
+        }
+        
+        .footer-bottom-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            text-align: center;
+        }
+        .footer-card{
+            width: 45%; /* Adjust the width as per your design */
+            margin-bottom: 20px; /* Optional: Adjust the margin as per your design */
+            padding: 10px;
+            text-align: center;
+    
+        }
+        .footer-card #dash {
+            margin: 10px auto; /* Center the dash horizontally */
+        }
+    }
+    @media screen and (min-width: 1024px){
+        #u-nav-right{
+            width: 40%;
+        }
+        #lower-nav #links-container a{
+            font-size: 25px;
+        }
+    }
+    @media screen and (min-width: 2560px){
+        
+        #u-nav-right{
+            width: 40%;
+            align-items: center;
+        }
+    }
