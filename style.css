@@ -975,7 +975,6 @@ width: 600px;
         display: flex;
         align-items: center;
         width: 100%;
-        border: 2px solid red;
         flex-shrink: 1;
         overflow: hidden;
     }
