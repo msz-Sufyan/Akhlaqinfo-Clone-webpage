@@ -71,3 +71,21 @@ function playVideoWhenVisible() {
     }
 }
 
+// Function to toggle the visibility of upper-nav based on screen size
+function toggleUpperNavVisibility() {
+    const upperNav = document.getElementById("upper-nav");
+    const lowerNav = document.getElementById("lower-nav");
+
+    if (window.innerWidth <= 991) {
+        // Hide upper-nav and show lower-nav
+        upperNav.style.display = "none";
+        lowerNav.style.display = "";
+    } else {
+        upperNav.style.display = "";
+    }
+}
+
+// Call the function when the page loads and when the window resizes
+window.addEventListener("DOMContentLoaded", toggleUpperNavVisibility);
+window.addEventListener("resize", toggleUpperNavVisibility);
+
