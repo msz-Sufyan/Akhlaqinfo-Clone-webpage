@@ -1028,7 +1028,7 @@ width: 600px;
         }
     
     #page3 {
-        height: 40vh;
+        height: auto;
     }
     #page3 {
         width: 50%;
@@ -1043,7 +1043,7 @@ width: 600px;
         margin: 0 auto; /* This will horizontally center all direct children of #page1 and .banner */
     }
     #page5 {
-        height: 65vh;
+        height: auto;
     }
     #page5 .page5-upper{
         height: auto;
