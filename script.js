@@ -76,7 +76,7 @@ function toggleUpperNavVisibility() {
     const upperNav = document.getElementById("upper-nav");
     const lowerNav = document.getElementById("lower-nav");
 
-    if (window.innerWidth <= 991) {
+    if (window.innerWidth <= 1024) {
         // Hide upper-nav and show lower-nav
         upperNav.style.display = "none";
         lowerNav.style.display = "";
