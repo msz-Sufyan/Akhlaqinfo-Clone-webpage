@@ -10,13 +10,7 @@ html, body {
     height: 100%;
     background-color: rgb(254, 248, 248)
 }
-#nav {
-    width: 100%;
-    height: 35vh;
-    display: flex;
-    flex-direction: column;
-}
-#nav #upper-nav {
+#upper-nav {
     width: 100%;
     height: 65%;
     align-items: center;
@@ -45,7 +39,7 @@ html, body {
     align-items: center;
     justify-content: center;
 }
-#nav #u-nav-left #nav-logo i{
+#u-nav-left #nav-logo i{
     font-size: 35px;
     color: red;
 }
@@ -56,6 +50,14 @@ html, body {
     flex-direction: column;
     justify-content: center;
 }
+
+#nav {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
 #u-nav-left #navlogotext h4{
     font-size: 14px;
     font-weight: 500;
@@ -160,7 +162,7 @@ html, body {
 
 .banner{
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     overflow: hidden;
     position: relative;
     background-image: url(https://plus.unsplash.com/premium_photo-1687119905839-8b6f9ae2ca4b?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
@@ -944,31 +946,224 @@ width: 600px;
 }
 
 
-
-.footer-badge{
+#footer .footer-badge {
     bottom: 0;
     left: 0;
-    height: 20%;
+    height: 10%;
     width: 100%;
-    padding:30px 20px;
+    padding: 30px 20px;
     border-top: .5px solid #fff;
     background-color: #15101e;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
 }
-.footer-badge h4{
+
+.footer-badge #footer-badge-content{
     color: #fff;
-    left:0;
+    width: 50%;
 }
-.footer-badge i{
+
+.footer-badge i {
     color: #fff;
     font-size: 45px;
 }
 
 
 
+@media screen and (min-width: 1920px){
+    
+    main *{
+        width: 50%;
+        margin: 0 auto; /* This will horizontally center all direct children of #page1 and .banner */
+    }
+
+    #upper-nav , #lower-nav{
+        width: 50%;
+        margin: 0 auto; /* This will horizontally center all direct children of #page1 and .banner */
+    
+    }
+    .navbar #lower-nav a{
+        font-size: 15px;
+    }
+    #nav{
+        background-color: #000;
+        width: 100%;
+    }
+    .navbar{
+        width: 50%;
+        margin: 0 auto; /* This will horizontally center all direct children of #page1 and .banner */
+        
+    }
+    
+    #page1 > *{
+        height: 40vh;
+    }
+
+    #page1 .banner #content {
+    width: 50%;
+    margin: 0 auto; /* This will horizontally center all direct children of #page1 and .banner */
+    }
+
+    #page1 #content .content-left h4{
+        font-size: 20px;
+    }
+    #page1 #content .content-left h3{
+        height: auto;
+        font-size: 80px;
+    }
+    #page1 #content .content-left a{
+        height: auto;
+        font-size: 15px;
+    }
+    #page1 #content .content-right .box-containner{
+        width: 50%;
+    }
+    #page2 {
+        height: 40vh;
+    }
+    #page2 > *{
+        width: 50%;
+        margin: 0 auto; /* This will horizontally center all direct children of #page1 and .banner */
+        }
+    
+    #page3 {
+        height: 40vh;
+    }
+    #page3 {
+        width: 50%;
+        margin: 0 auto; /* This will horizontally center all direct children of #page1 and .banner */
+    }
+    #slider-container{
+        width: 50%;
+        margin: 0 auto; /* This will horizontally center all direct children of #page1 and .banner */
+    }
+    #page4 .page4-content{
+        width: 50%;
+        margin: 0 auto; /* This will horizontally center all direct children of #page1 and .banner */
+    }
+    #page5 {
+        height: 65vh;
+    }
+    #page5 .page5-upper{
+        height: auto;
+        width: 28%;
+        margin: 0 auto; /* This will horizontally center all direct children of #page1 and .banner */
+    }
+    #page5 .page5-lower{
+        width: 65%;
+        margin: 0 auto; /* This will horizontally center all direct children of #page1 and .banner */
+    }
+    #footer{
+        height: 60vh;
+    }
+    #footer .footer-bottom,
+    .footer-upper,
+    .footer-center{
+        width: 50%;
+        margin: 0 auto; /* This will horizontally center all direct children of #page1 and .banner */
+    }
+        
+}
+
+
+
+
+@media screen and (min-width: 1620px) and (max-width: 1920px){
+    
+    main *{
+        width: 80%;
+        margin: 0 auto; /* This will horizontally center all direct children of #page1 and .banner */
+    }
+
+    #upper-nav , #lower-nav{
+        width: 80%;
+        margin: 0 auto; /* This will horizontally center all direct children of #page1 and .banner */
+    
+    }
+    .navbar #lower-nav a{
+        font-size: 15px;
+    }
+    #nav{
+        background-color: #000;
+        width: 100%;
+    }
+    .navbar{
+        width: 80%;
+        margin: 0 auto; /* This will horizontally center all direct children of #page1 and .banner */
+        
+    }
+    
+    #page1 > *{
+        height: 50vh;
+    }
+
+    #page1 .banner #content {
+    width: 80%;
+    margin: 0 auto; /* This will horizontally center all direct children of #page1 and .banner */
+    }
+
+    #page1 #content .content-left h4{
+        font-size: 20px;
+    }
+    #page1 #content .content-left h3{
+        height: auto;
+        font-size: 80px;
+    }
+    #page1 #content .content-left a{
+        height: auto;
+        font-size: 15px;
+    }
+    #page1 #content .content-right .box-containner{
+        width: 50%;
+    }
+    #page2 {
+        height: 50vh;
+    }
+    #page2 > *{
+        width: 80%;
+        margin: 0 auto; /* This will horizontally center all direct children of #page1 and .banner */
+        }
+    
+    #page3 {
+        height: 50vh;
+    }
+    #page3 {
+        width: 80%;
+        margin: 0 auto; /* This will horizontally center all direct children of #page1 and .banner */
+    }
+    #slider-container{
+        width: 80%;
+        margin: 0 auto; /* This will horizontally center all direct children of #page1 and .banner */
+    }
+    #page4 .page4-content{
+        width: 80%;
+        margin: 0 auto; /* This will horizontally center all direct children of #page1 and .banner */
+    }
+    #page5 {
+        height: 90vh;
+    }
+    #page5 .page5-upper{
+        height: auto;
+        width: 45%;
+        margin: 0 auto; /* This will horizontally center all direct children of #page1 and .banner */
+    }
+    #page5 .page5-lower{
+        width: 95%;
+        margin: 0 auto; /* This will horizontally center all direct children of #page1 and .banner */
+    }
+    #footer{
+        height: 80vh;
+    }
+    #footer > *{
+        width: 80%;
+        margin: 0 auto; /* This will horizontally center all direct children of #page1 and .banner */
+    }    
+}
+
+
 /* Media query for screens with a minimum width of 320px */
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 320px) and (max-width: 425px){
     /* Adjustments for the navigation */
     #main{
         width: 100%;
@@ -1181,22 +1376,8 @@ width: 600px;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Media query for small screens */
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 425px) and (max-width: 767px) {
     /* Hide regular navigation links */
 #main{
     height: auto;
@@ -1317,7 +1498,7 @@ width: 600px;
 
 
 /* Media query for medium screens */
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
     #main{
         height: auto;
     }
@@ -1435,20 +1616,5 @@ width: 600px;
         }
         .footer-card #dash {
             margin: 10px auto; /* Center the dash horizontally */
-        }
-    }
-    @media screen and (min-width: 1024px){
-        #u-nav-right{
-            width: 40%;
-        }
-        #lower-nav #links-container a{
-            font-size: 25px;
-        }
-    }
-    @media screen and (min-width: 2560px){
-        
-        #u-nav-right{
-            width: 40%;
-            align-items: center;
         }
     }
